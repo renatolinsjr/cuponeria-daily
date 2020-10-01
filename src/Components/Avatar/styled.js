@@ -59,12 +59,29 @@ const handleLabelSizeType = (status) => {
   }
 };
 
-const handleAvatarLabelPosition = (status) => {
+const handleAvatarBottomLabelPosition = (status) => {
   switch (status) {
     case "none":
       return '-3px';
-    default:
+    case "next":
       return '-28px';
+    case "active":
+      return "-23px"
+    default:
+      return "-3px"
+  }
+};
+
+const handleAvatarLeftLabelPosition = (status) => {
+  switch (status) {
+    case "none":
+      return '25px';
+    case "next":
+      return '25px';
+    case "active":
+      return "50px"
+    default:
+      return "25px"
   }
 };
 
@@ -87,7 +104,7 @@ const handleFontColorType = (status, theme) => {
 };
 
 export const AvatarWrapper = styled.div`
-  height: 100%;
+  height: ${({status}) => handleDesktopAvatarSize(status)};
   width: ${({status}) => handleDesktopAvatarSize(status)};
   position: relative;
 
@@ -103,8 +120,8 @@ export const Status = styled.div`
   background-color: ${({status, theme}) => handleColorType(status, theme)};
   border-radius: 50%;
   position: absolute;
-  right: 40px;
-  top: 30px;
+  right: ${({status}) => status === "active" ? "60px" : "40px"};
+  top: ${({status}) => status === "active" ? "40px" : "30px"};
 `;
 
 export const AvatarLabel = styled.div`
@@ -113,8 +130,8 @@ export const AvatarLabel = styled.div`
   border-radius: 8px;
   background-color: ${({status, theme}) => handleColorType(status, theme)};
   position: absolute;
-  bottom: ${({status}) => handleAvatarLabelPosition(status)};
-  left: 25px;
+  bottom: ${({status}) => handleAvatarBottomLabelPosition(status)};
+  left: ${({status}) => handleAvatarLeftLabelPosition(status)};
   display: flex;
   align-items: center;
   justify-content: center;

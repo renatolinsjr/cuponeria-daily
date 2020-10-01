@@ -8,8 +8,8 @@ import {
 } from './styled';
 
 const Avatar = ({
-  gender='m',
-  status='none',
+  gender="m",
+  status="none",
   accessory="none",
   body= gender === "m" ? "chest" : "breasts",
   circleColor="blue",
@@ -64,3 +64,8 @@ const Avatar = ({
 );
 
 export default Avatar;
+
+// status state:
+// "active",
+// "next",
+// "none"
