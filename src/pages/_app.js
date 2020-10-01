@@ -1,15 +1,19 @@
-import '../styles/globals.css'
+import "../styles/globals.css";
 import Theme from "../styles/Theme";
 import Header from "../Components/Header";
-import styled from "styled-components"
+import GlobalStyles from "../styles/GlobalStyles";
+import { Container } from "./_styled";
 
 function MyApp({ Component, pageProps }) {
   return (
     <Theme>
+      <GlobalStyles />
       <Header />
-      <Component {...pageProps} />
+      <Container>
+        <Component {...pageProps} />
+      </Container>
     </Theme>
   );
 };
 
-export default MyApp
+export default MyApp;
