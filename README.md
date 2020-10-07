@@ -29,6 +29,7 @@ A aplicação ainda está em desenvolvimento:
 ## DEMO
 
 Em breve!
+![](https://ibb.co/kMMtgmY)
 
 ## Como Funciona a Aplicação
 
