@@ -29,7 +29,8 @@ A aplicação ainda está em desenvolvimento:
 ## DEMO
 
 Em breve!
-![](https://i.ibb.co/255T7ZX/cuponeria-daily-preview.jpg)
+![](https://i.ibb.co/HF6x0F5/image.png)
+![](https://i.ibb.co/0yqQz2T/image.png)
 
 ## Como Funciona a Aplicação
 
