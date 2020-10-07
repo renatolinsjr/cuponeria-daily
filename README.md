@@ -1,30 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Cuponeria Daily
+> Com a chegada da pandemia e tendo em vista a necessidade do trabalho remoto, pensei em criar uma aplicação a fim de organizar a ordem dos participantes em nosso Standup Daily Meeting de uma forma mais divertida.
 
-## Getting Started
+# Layout para referência
+https://www.figma.com/file/lhnPZ72pSgzaZs3hf4v4v0/Untitled?node-id=0%3A1
 
-First, run the development server:
+# TODO:
+A aplicação ainda está em desenvolvimento:
+- [x] Dados Mockados.
+- [x] Tela Principal.
+- [ ] Modais de confimação.
+- [ ] Tela de Login.
+- [ ] Integração com o banco de dados em tempo real.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Sumário
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [Requisitos](#Requisitos)	
+- [Demonstração](#DEMO)
+- [Como Funciona a Aplicação](#Como-Funciona-a-Aplicação)
+- [Instalação](#Instalação)
+- [Redes Sociais e Portfólio](#Redes-Sociais-e-Portfólio)
+- [Domutação do React](#React-DOCS)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Requisitos
 
-## Learn More
++ [Node](https://nodejs.org/)
++ [Yarn](https://yarnpkg.com/)
 
-To learn more about Next.js, take a look at the following resources:
+## DEMO
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Em breve!
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Como Funciona a Aplicação
 
-## Deploy on Vercel
+A aplicação conta com uma tela de login onde cada um que logar terá o seu lugar reservado na fila por ordem de chegada.
+Caso o usuário perca a conexão seu lugar na fila ainda estará guardado.
+Cada usuário fica encarregado de finalizar sua daily.
+O administrador pode trocar a ordem dos participantes livremente.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Instalação
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Abra o terminal e digite:
+
+### `git clone https://github.com/renatolinsjr/cuponeria-daily`
+
+Agora que você clonou o projeto para o seu computador, será necessário instalar todas as dependências para a aplicação rodar diretamente no localhost. Para isso, digite o comando abaixo e espere a instalação terminar:
+
+### `yarn`
+
+Com a aplicação clonada e todas as dependências instaladas você pode executar o comando abaixo para iniciar a aplicação em modo de desenvolvimento:
+
+### `yarn dev`
+
+A aplicação rodará no endereço http://localhost:3000/ divirta-se!
+
+## Redes Sociais e Portfólio
+
+renatolinsren@gmail.com
+
+[Linkedin](https://www.linkedin.com/in/renatolinsjr/)
+
+[GitHub](https://github.com/renatolinsjr)

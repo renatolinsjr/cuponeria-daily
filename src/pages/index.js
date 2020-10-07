@@ -2,6 +2,10 @@ import Head from "next/head";
 
 import Avatar from "@components/Avatar";
 
+import data from '../mockData/mockedAvatars';
+
+import { HomeWrapper } from './_styled'
+
 export default function Home() {
   return (
     <>
@@ -9,7 +13,11 @@ export default function Home() {
         <title>Cuponeria Daily</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Avatar />
+      <HomeWrapper>
+        {data.map(({status, id}) => (
+          <Avatar key={id} status={status} />
+        ))}
+      </HomeWrapper>
     </>
   );
 }
